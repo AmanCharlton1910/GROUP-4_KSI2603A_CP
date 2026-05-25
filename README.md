@@ -1,7 +1,3 @@
-Here is a collection of clear, professional sentences tailored for a GitHub or project **README.md** file, based on your assignment details. They are organized by section so you can copy and paste what you need.
-
----
-
 ## 📖 About The Project
 
 * This repository houses the **Courseware Proposal** for the **IML513: Instructional Material Design and Development** final project.
