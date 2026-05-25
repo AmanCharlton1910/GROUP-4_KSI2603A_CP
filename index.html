@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japanese Word Learner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1>Japanese Word Learner</h1>
+        <p>Practice vocabulary with flashcards and quizzes.</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#vocab">Vocabulary</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="videos.html">Videos</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Learn Japanese</span>
+          <h2>Study common words with meaning, reading, and practice.</h2>
+          <p>Explore vocabulary by category, reveal answers, and test yourself with a quick quiz.</p>
+          <div class="hero-actions">
+            <button id="startQuizBtn">Start Quiz</button>
+            <button class="secondary" onclick="location.href='videos.html'">Watch Video Lessons</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Study tips</h3>
+          <ul>
+            <li>Read the word aloud</li>
+            <li>Check the romaji reading</li>
+            <li>Quiz yourself after each category</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="vocab" class="section vocab-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Vocabulary Flashcards</h2>
+          <p>Use the cards to learn Japanese words, readings, and English meanings.</p>
+        </div>
+        <div class="category-buttons" id="categoryButtons"></div>
+        <div class="cards-grid" id="cardsGrid"></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quick Quiz</h2>
+          <p>Choose the English meaning for the Japanese word shown.</p>
+        </div>
+        <div class="quiz-card">
+          <p class="quiz-word" id="quizWord"></p>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback"></p>
+          <button id="nextQuestionBtn">Next Word</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>About This Site</h2>
+          <p>This site helps students build Japanese vocabulary with easy-to-use flashcards and interactive review.</p>
+        </div>
+        <p class="about-text">Words are grouped by category so you can focus on greetings, food, animals, and daily phrases. The quiz uses the same vocabulary to help you remember meanings and improve recall.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Japanese Word Learner</p>
+      <p>Designed for student practice and review.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

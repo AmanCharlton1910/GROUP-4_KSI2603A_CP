@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Japanese Word Learner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1>Quiz</h1>
+        <p>Test your vocabulary recall.</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="videos.html">Videos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quick Quiz</h2>
+          <p>Choose the English meaning for the Japanese word shown.</p>
+        </div>
+        <div class="quiz-card">
+          <p class="quiz-word" id="quizWord"></p>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback"></p>
+          <button id="nextQuestionBtn">Next Word</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Japanese Word Learner</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
