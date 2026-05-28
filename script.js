@@ -1,5 +1,5 @@
 const vocabulary = [
-  { category: 'Greetings', word: 'こんにちは', reading: 'konnichiwa', meaning: 'Hello', image: '/image/hello.jpg' },
+  { category: 'Greetings', word: 'こんにちは', reading: 'konnichiwa', meaning: 'Hello', image: 'image/hello.jpg' },
   { category: 'Greetings', word: 'ありがとう', reading: 'arigatou', meaning: 'Thank you', image: '/image/thank-you.jpg' },
   { category: 'Greetings', word: 'さようなら', reading: 'sayounara', meaning: 'Goodbye', image: '/image/goodbye.jpg' },
   { category: 'Food', word: 'りんご', reading: 'ringo', meaning: 'Apple', image: '/image/apple.jpg' },
