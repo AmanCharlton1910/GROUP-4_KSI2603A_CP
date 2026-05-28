@@ -5,8 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food Videos - Japanese Word Learner</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="video-player.js" defer></script>
 </head>
 <body>
+  <noscript>
+    <div class="noscript-banner">
+      <div class="container">
+        <p>This page is best viewed with JavaScript enabled. Please enable JavaScript in your browser.</p>
+      </div>
+    </div>
+  </noscript>
+
   <header class="site-header">
     <div class="container header-inner">
       <div>
@@ -16,6 +25,7 @@
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="videos.html">Videos</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
@@ -25,13 +35,13 @@
       <div class="container video-list">
         <article class="video-card">
           <h3>Lesson 1: りんご</h3>
-          <video controls preload="metadata" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
-          <p>Review the word for "Apple" and see examples in a sentence.</p>
+          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></div>
+          <p>Watch this YouTube lesson video to review the word for "Apple" and see examples in a sentence.</p>
         </article>
         <article class="video-card">
           <h3>Lesson 2: みず</h3>
-          <video controls preload="metadata" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
-          <p>Learn the word for "Water" and practice Japanese pronunciation.</p>
+          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></div>
+          <p>Watch this YouTube lesson video to learn the word for "Water" and practice Japanese pronunciation.</p>
         </article>
       </div>
     </section>

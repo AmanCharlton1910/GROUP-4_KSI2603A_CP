@@ -5,8 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Animal Videos - Japanese Word Learner</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="video-player.js" defer></script>
 </head>
 <body>
+  <noscript>
+    <div class="noscript-banner">
+      <div class="container">
+        <p>This page is best viewed with JavaScript enabled. Please enable JavaScript in your browser.</p>
+      </div>
+    </div>
+  </noscript>
+
   <header class="site-header">
     <div class="container header-inner">
       <div>
@@ -16,6 +25,7 @@
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="videos.html">Videos</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
@@ -25,13 +35,13 @@
       <div class="container video-list">
         <article class="video-card">
           <h3>Lesson 1: ねこ</h3>
-          <video controls preload="metadata" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
-          <p>Learn the word for "Cat" and practice with Japanese audio.</p>
+          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></div>
+          <p>Watch this YouTube lesson video to learn the word for "Cat" and practice with Japanese audio.</p>
         </article>
         <article class="video-card">
           <h3>Lesson 2: いぬ</h3>
-          <video controls preload="metadata" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
-          <p>Watch the lesson for "Dog" and see it used in a simple phrase.</p>
+          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></div>
+          <p>Watch this YouTube lesson video for "Dog" and see it used in a simple phrase.</p>
         </article>
       </div>
     </section>
