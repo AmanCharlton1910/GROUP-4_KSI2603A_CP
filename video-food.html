@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food Videos - Japanese Word Learner</title>
+  <link rel="icon" href="image/high-resolution-color-logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
   <script src="video-player.js" defer></script>
 </head>
@@ -15,33 +16,42 @@
       </div>
     </div>
   </noscript>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <div>
-        <h1>Food Vocabulary Videos</h1>
-        <p>Watch food-related Japanese lessons.</p>
+      <div class="site-brand">
+        <img src="image/high-resolution-color-logo.png" alt="Japanese Word Learner logo" class="site-logo" />
+        <div>
+          <h1>Food Vocabulary Videos</h1>
+          <p>Watch food-related Japanese lessons.</p>
+        </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Primary site navigation">
         <a href="index.html">Home</a>
         <a href="videos.html">Videos</a>
         <a href="about.html">About</a>
       </nav>
+      <button id="themeToggle" class="theme-toggle" type="button">Dark Mode</button>
+      <button id="contrastToggle" class="theme-toggle accessibility-toggle" type="button">High Contrast</button>
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="section">
       <div class="container video-list">
+        <p class="accessible-note">If captions are available in the video player, turn them on. These lessons also include summary text to support hearing-impaired learners.</p>
         <article class="video-card">
           <h3>Lesson 1: りんご</h3>
-          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></div>
+          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-label="Video lesson for the word りんご"></div>
           <p>Watch this YouTube lesson video to review the word for "Apple" and see examples in a sentence.</p>
+          <p class="video-caption">Summary: This lesson teaches the word for apple and includes polite phrases for ordering food.</p>
         </article>
         <article class="video-card">
           <h3>Lesson 2: みず</h3>
-          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></div>
+          <div class="video-player" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-label="Video lesson for the word みず"></div>
           <p>Watch this YouTube lesson video to learn the word for "Water" and practice Japanese pronunciation.</p>
+          <p class="video-caption">Summary: This lesson teaches the word for water and includes examples of polite requests.</p>
         </article>
       </div>
     </section>
@@ -51,7 +61,9 @@
     <div class="container footer-inner">
       <p>&copy; 2026 Japanese Word Learner</p>
       <p>Food vocabulary video practice.</p>
+      <p><a href="contact.html">Contact us</a> for feedback or help.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

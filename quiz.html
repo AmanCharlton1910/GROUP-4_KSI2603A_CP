@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz - Japanese Word Learner</title>
+  <link rel="icon" href="image/high-resolution-color-logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,33 +15,40 @@
       </div>
     </div>
   </noscript>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <div>
-        <h1>Quiz</h1>
-        <p>Test your vocabulary recall.</p>
+      <div class="site-brand">
+        <img src="image/high-resolution-color-logo.png" alt="Japanese Word Learner logo" class="site-logo" />
+        <div>
+          <h1>Quiz</h1>
+          <p>Test your vocabulary recall.</p>
+        </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Primary site navigation">
         <a href="index.html">Home</a>
         <a href="videos.html">Videos</a>
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
       </nav>
+      <button id="themeToggle" class="theme-toggle" type="button">Dark Mode</button>
+      <button id="contrastToggle" class="theme-toggle accessibility-toggle" type="button">High Contrast</button>
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section id="quiz" class="section quiz-section">
       <div class="container">
         <div class="section-header">
-          <h2>Quick Quiz</h2>
-          <p>Choose the English meaning for the Japanese word shown.</p>
+          <h2>Quiz</h2>
+          <p>Answer the question shown below. The quiz will rotate between English, Japanese, and picture prompts.</p>
         </div>
         <div class="quiz-card">
+          <p class="quiz-type" id="quizType"></p>
           <p class="quiz-word" id="quizWord"></p>
           <div class="quiz-options" id="quizOptions"></div>
-          <p class="quiz-feedback" id="quizFeedback"></p>
+          <p class="quiz-feedback" id="quizFeedback" role="status" aria-live="polite"></p>
           <button id="nextQuestionBtn">Next Word</button>
         </div>
       </div>
@@ -50,6 +58,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Japanese Word Learner</p>
+      <p><a href="contact.html">Contact us</a> for feedback or help.</p>
     </div>
   </footer>
 

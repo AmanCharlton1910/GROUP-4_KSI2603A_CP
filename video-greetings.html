@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Greeting Videos - Japanese Word Learner</title>
+  <link rel="icon" href="image/high-resolution-color-logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
   <script src="video-player.js" defer></script>
 </head>
@@ -15,38 +16,48 @@
       </div>
     </div>
   </noscript>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <div>
-        <h1>Greeting Videos</h1>
-        <p>Watch lessons for Japanese greetings.</p>
+      <div class="site-brand">
+        <img src="image/high-resolution-color-logo.png" alt="Japanese Word Learner logo" class="site-logo" />
+        <div>
+          <h1>Greeting Videos</h1>
+          <p>Watch lessons for Japanese greetings.</p>
+        </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Primary site navigation">
         <a href="index.html">Home</a>
         <a href="videos.html">Videos</a>
         <a href="about.html">About</a>
       </nav>
+      <button id="themeToggle" class="theme-toggle" type="button">Dark Mode</button>
+      <button id="contrastToggle" class="theme-toggle accessibility-toggle" type="button">High Contrast</button>
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="section">
       <div class="container video-list">
+        <p class="accessible-note">If captions are available in the video player, turn them on. These lessons also include summary text to support hearing-impaired learners.</p>
         <article class="video-card">
           <h3>Lesson 1: Greeting Japanese with Romaji Subtitle - How to greet in Japanese / Greeting Song in Japanese</h3>
-          <div class="video-player" data-video-src="https://youtu.be/HpFL2SwSOrc?si=1qarQunRCKosvxpj"></div>
+          <div class="video-player" data-video-src="https://youtu.be/HpFL2SwSOrc?si=1qarQunRCKosvxpj" aria-label="Video lesson on Japanese greetings"></div>
           <p>Watch this YouTube lesson video to practice the greeting in Japanese.</p>
+          <p class="video-caption">Summary: This lesson shows useful greeting phrases with romaji subtitles for learners.</p>
         </article>
         <article class="video-card">
           <h3>Lesson 2: Learn Basic Japanese Greetings with Anime (Part 1)</h3>
-          <div class="video-player" data-video-src="https://youtu.be/Hx4efN5kvuM?si=N7KDfzcZJNDhNkbn"></div>
+          <div class="video-player" data-video-src="https://youtu.be/Hx4efN5kvuM?si=N7KDfzcZJNDhNkbn" aria-label="Video lesson on basic Japanese greetings"></div>
           <p>Watch this YouTube lesson video to learn some of the Japanese greetings and their usage.</p>
+          <p class="video-caption">Summary: This lesson includes everyday greeting phrases used in anime-style examples.</p>
         </article>
         <article class="video-card">
           <h3>Lesson 3: Learn Basic Japanese Greetings with Anime (Part 2)</h3>
-          <div class="video-player" data-video-src="https://youtu.be/Tuhm8YUMhcU?si=lUvy1Svv6s-FTRzy"></div>
+          <div class="video-player" data-video-src="https://youtu.be/Tuhm8YUMhcU?si=lUvy1Svv6s-FTRzy" aria-label="Video lesson on Japanese greetings part two"></div>
           <p>Watch this YouTube lesson video to learn more Japanese greetings and their usage.</p>
+          <p class="video-caption">Summary: This lesson continues with more greeting phrases and examples for daily conversation.</p>
         </article>
       </div>
     </section>
@@ -56,7 +67,9 @@
     <div class="container footer-inner">
       <p>&copy; 2026 Japanese Word Learner</p>
       <p>Basic greeting lesson videos for students.</p>
+      <p><a href="contact.html">Contact us</a> for feedback or help.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

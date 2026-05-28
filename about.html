@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Our Group - Japanese Word Learner</title>
+  <link rel="icon" href="image/high-resolution-color-logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,24 +15,30 @@
       </div>
     </div>
   </noscript>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <div>
-        <h1>About Our Group</h1>
-        <p>Meet the students behind the Japanese Word Learner project.</p>
+      <div class="site-brand">
+        <img src="image/high-resolution-color-logo.png" alt="Japanese Word Learner logo" class="site-logo" />
+        <div>
+          <h1>About Our Group</h1>
+          <p>Meet the students behind the Japanese Word Learner project.</p>
+        </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Primary site navigation">
         <a href="index.html">Home</a>
         <a href="quiz.html">Quiz</a>
         <a href="videos.html">Videos</a>
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
       </nav>
+      <button id="themeToggle" class="theme-toggle" type="button">Dark Mode</button>
+      <button id="contrastToggle" class="theme-toggle accessibility-toggle" type="button">High Contrast</button>
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="section">
       <div class="container">
         <div class="section-header">
@@ -83,7 +90,9 @@
     <div class="container footer-inner">
       <p>&copy; 2026 Japanese Word Learner</p>
       <p>Introduction page for the project team.</p>
+      <p><a href="contact.html">Contact us</a> for feedback or help.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
